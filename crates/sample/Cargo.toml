@@ -1,0 +1,27 @@
+[package]
+name = "rapr-sample"
+description = ""
+keywords = []
+version = "0.0.1"
+categories = { workspace = true }
+edition = { workspace = true }
+rust-version = { workspace = true }
+homepage = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+documentation = { workspace = true }
+readme = "README.md"
+
+[lints]
+workspace = true
+[package.metadata.docs.rs]
+workspace = true
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+
+[dev-dependencies]
+
+[features]
+default = []

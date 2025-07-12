@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Dapr Community Repo
+    url: https://github.com/rapr/community
+    about: Please see our community docs here.
+  - name: Dapr Discord Chat
+    url: https://aka.ms/rapr-discord
+    about: Please ask questions or troubleshooting help here.
+  - name: Report a security issue
+    url: https://docs.rapr.io/operations/support/support-security-issues
+    about: Please report security vulnerabilities using these instructions.

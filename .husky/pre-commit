@@ -1,0 +1,21 @@
+echo '🏗️👷 Cargo fmt...'
+cargo fmt --all -- --check ||
+(
+    echo '❌❌❌❌ Failed Cargo fmt ❌❌❌❌'
+    exit 1;
+)
+
+echo '\n🏗️👷 Cargo Clippy...'
+# cargo clippy --workspace --all-features --all-targets -- -D warnings ||
+cargo clippy --workspace --all-features --all-targets ||
+(
+    echo '❌❌❌❌ Failed Cargo Clippy ❌❌❌❌'
+    exit 1;
+)
+
+echo '\n🏗️👷 Cargo Test...'
+cargo test --workspace ||
+(
+    echo '❌❌❌❌ Failed Cargo Test ❌❌❌❌'
+    exit 1;
+)

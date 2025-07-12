@@ -1,0 +1,18 @@
+<svg width="200" height="100" viewBox="0 0 200 100"
+  xmlns="http://www.w3.org/2000/svg">
+  <!-- Abstract "R" Shape (Gradient Stroke) -->
+  <defs>
+    <linearGradient id="Rgradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5A0" />
+      <stop offset="100%" stop-color="#00D9F5" />
+    </linearGradient>
+  </defs>
+  <path d="M60 20 L60 80 L80 80 L100 50 L80 20 Z" fill="none" stroke="url(#Rgradient)" stroke-width="4" />
+  <path d="M80 50 L110 80" stroke="url(#Rgradient)" stroke-width="4" />
+
+  <!-- Text "Rapr" (Bold White with Dark Border for Visibility) -->
+  <text x="130" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="bold" text-anchor="middle" fill="#FFFFFF" stroke="#1A1A2E" stroke-width="2">Rapr</text>
+
+  <!-- Accent Shape (Vibrant Pink) -->
+  <circle cx="180" cy="30" r="10" fill="#FF3860" />
+</svg>
