@@ -1,0 +1,33 @@
+[package]
+name = "rapr-runtime"
+version = "0.0.1"
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+license.workspace = true
+license-file.workspace = true
+readme.workspace = true
+documentation.workspace = true
+
+[badges]
+maintenance = { status = "actively-developed" }
+[lints]
+workspace = true
+[package.metadata.docs.rs]
+workspace = true
+
+[dependencies]
+kube.workspace = true
+k8s-openapi.workspace = true
+rapr-k8s.workspace = true
+snafu.workspace = true
+
+[dev-dependencies]
+
+[features]
+default = []
