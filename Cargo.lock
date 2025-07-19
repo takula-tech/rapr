@@ -766,7 +766,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rapr-k8s"
+name = "rapr-k8s-apis"
 version = "0.0.1"
 dependencies = [
  "serde",
@@ -779,7 +779,7 @@ version = "0.0.1"
 dependencies = [
  "k8s-openapi",
  "kube",
- "rapr-k8s",
+ "rapr-k8s-apis",
  "snafu",
 ]
 

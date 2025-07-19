@@ -47,7 +47,8 @@ all-features = true
 
 [workspace.dependencies]
 ######[rapr-crate-dependencies]######
-rapr-k8s = { path = "crates/k8s", default-features = false, version = "0.0.1" }
+rapr-k8s-apis = { path = "crates/k8s-apis", default-features = true, version = "0.0.1" }
+rapr-runtime = { path = "crates/runtime", default-features = true, version = "0.0.1" }
 ######## [dev-dependencies] ########
 ######## [dependencies] ########
 # [target.'cfg(or(target_arch = "macOS"),target_arch = "linux")'.workspace.dependencies]

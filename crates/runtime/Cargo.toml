@@ -1,5 +1,5 @@
 [package]
-name = "rapr-k8s"
+name = "rapr-runtime"
 version = "0.0.1"
 edition.workspace = true
 rust-version.workspace = true
@@ -21,8 +21,12 @@ workspace = true
 workspace = true
 
 [dependencies]
-serde.workspace = true
-serde_json.workspace = true
+######[rapr-crate-dependencies]######
+rapr-k8s-apis.workspace = true
+######[external-dependencies]######
+kube.workspace = true
+k8s-openapi.workspace = true
+snafu.workspace = true
 
 [dev-dependencies]
 
