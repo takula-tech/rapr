@@ -1,5 +1,5 @@
 [package]
-name = "rapr-runtime"
+name = "rapr-contributes"
 version = "0.0.1"
 edition.workspace = true
 rust-version.workspace = true
@@ -21,16 +21,6 @@ workspace = true
 workspace = true
 
 [dependencies]
-######[rapr-crate-dependencies]######
-rapr.workspace = true
-rapr-apis.workspace = true
-######[external-dependencies]######
-kube.workspace = true
-k8s-openapi.workspace = true
-snafu.workspace = true
-uuid.workspace = true
-serde.workspace = true
-
 [dev-dependencies]
 
 [features]

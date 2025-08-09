@@ -1,6 +1,6 @@
 
 [package]
-name = "takulatech-rapr"
+name = "rapr"
 version = "0.0.1"
 edition.workspace = true
 rust-version.workspace = true
@@ -16,6 +16,7 @@ workspace = true
 [dev-dependencies]
 [dependencies]
 snafu.workspace = true
+serde.workspace = true
 
 [workspace.package]
 authors = ["Takula Technology <talulatech@gmail.com>"]
@@ -47,8 +48,10 @@ all-features = true
 
 [workspace.dependencies]
 ######[rapr-crate-dependencies]######
-rapr-k8s-apis = { path = "crates/k8s-apis", default-features = true, version = "0.0.1" }
+rapr = { path = ".", default-features = true, version = "0.0.1" }
+rapr-apis = { path = "crates/apis", default-features = true, version = "0.0.1" }
 rapr-runtime = { path = "crates/runtime", default-features = true, version = "0.0.1" }
+rapr-contributes = { path = "crates/contributes", default-features = true, version = "0.0.1" }
 ######## [dev-dependencies] ########
 ######## [dependencies] ########
 # [target.'cfg(or(target_arch = "macOS"),target_arch = "linux")'.workspace.dependencies]
@@ -58,12 +61,12 @@ rapr-runtime = { path = "crates/runtime", default-features = true, version = "0.
 # This can further speed up programs, possibly at the cost of higher memory usage.
 # MALLOC_CONF="thp:always,metadata_thp:always" cargo build --release
 tikv-jemallocator = "0.6"
-mimalloc = { version = "0.1", default-features = false }
+mimalloc = { version = "0.1", default-features = true }
 snafu = "0.8"
-serde = { version = "1.0", default-features = true }
+serde = { version = "1.0", default-features = true, features = ["derive"] }
 serde_derive = "1.0"
 serde_json = "1.0"
-uuid = "1"
+uuid = { version = "1", features = ["v4"] }
 arrayvec = "0.7"
 kube = "1.1"
 k8s-openapi = { version = "0.25", features = ["v1_30"] }
