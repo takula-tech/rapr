@@ -6,5 +6,3 @@
 )]
 #![allow(missing_docs)]
 #![allow(dead_code)]
-
-pub mod meta;
