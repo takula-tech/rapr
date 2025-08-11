@@ -1,6 +1,6 @@
 use crate::common::{NameValuePair, Scoped};
 use crate::{K8sListMetaV1, K8sObjectMetaV1, K8sTypeMetaV1};
-use rapr::utils::component_log_name;
+use rapr_common::utils::component_log_name;
 use serde::{Deserialize, Serialize};
 
 pub const KIND: &str = "Component";

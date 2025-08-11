@@ -1,0 +1,31 @@
+[package]
+name = "uds_tcp_grpc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio.workspace = true
+tonic.workspace = true
+tonic-prost.workspace = true
+prost.workspace = true
+tokio-stream.workspace = true
+futures.workspace = true
+
+[build-dependencies]
+tonic-prost-build = "0.14"
+
+[[bin]]
+name = "tcp-server"
+path = "src/tcp_server.rs"
+
+[[bin]]
+name = "tcp-client"
+path = "src/tcp_client.rs"
+
+[[bin]]
+name = "uds-client"
+path = "src/uds_client.rs"
+
+[[bin]]
+name = "uds-server"
+path = "src/uds_server.rs"

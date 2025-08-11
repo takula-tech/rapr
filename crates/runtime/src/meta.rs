@@ -1,7 +1,7 @@
 use k8s_openapi::apimachinery::pkg::apis::meta::v1::ObjectMeta as Metav1Object;
 use kube::Resource as ClientObject;
-use rapr::RaprMode;
 use rapr_apis::{common::NameValuePair, components::v1alpha1::Component};
+use rapr_common::RaprMode;
 use serde::{Deserialize, Serialize};
 use snafu::{ResultExt, Snafu};
 use std::collections::HashMap;

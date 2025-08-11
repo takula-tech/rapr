@@ -22,7 +22,7 @@ workspace = true
 
 [dependencies]
 ######[rapr-crate-dependencies]######
-rapr.workspace = true
+rapr-common.workspace = true
 rapr-apis.workspace = true
 ######[external-dependencies]######
 kube.workspace = true
@@ -30,6 +30,7 @@ k8s-openapi.workspace = true
 snafu.workspace = true
 uuid.workspace = true
 serde.workspace = true
+tokio.workspace = true
 
 [dev-dependencies]
 
